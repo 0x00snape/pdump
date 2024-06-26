@@ -1,5 +1,5 @@
 ______________________________________________
-![maxresdefault](https://imgur.com/O7ofQOa)
+![maxresdefault](https://i.imgur.com/O7ofQOa.jpeg)
 ______________________________________________
 # pdump
 pdump is a running process dumper written in rustlang which uses the syscall process_vm_readv().
