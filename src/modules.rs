@@ -76,7 +76,7 @@ pub fn readMEM(pid: i32, startADDR: usize, endADDR: usize) {
                     // Printing the hex value 
                     for i in data {
                         
-                        if (0x00..0x7F).contains(&i) {
+                        if (0x00..0x7E).contains(&i) {
                             print!("{}", format!(" {:02x} ", i).white().on_blue());
                         } else if i == 0x00 {
                             print!("{}", format!(" {:02x} ", i).red()); 
