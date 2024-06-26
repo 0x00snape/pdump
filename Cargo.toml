@@ -1,0 +1,18 @@
+[package]
+name = "scanme"
+version = "0.1.0"
+edition = "2021"
+author = "0x00snape -> Ar.P"
+
+[dependencies]
+colored = "2.1.0"
+nix = { version = "0.26", features = ["uio"] }
+sudo = "0.6.0"
+sysinfo = "0.30.12"
+
+[profile.release]
+opt-level = "z"
+lto = true
+panic = 'abort'
+strip = true
+codegen-units = 1
