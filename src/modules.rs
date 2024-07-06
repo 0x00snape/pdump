@@ -15,7 +15,7 @@ pub fn getPID(pname: String) -> i32 {
     sys.refresh_all();
 
     // Getting process
-    let ppid = sys.processes_by_name(&pname).take(1).next().unwrap();
+    let ppid = sys.processes_by_name(&pname).take(1).next().expect(format!("[{pname}] Process not found").as_str());
 
     // Process PID
     ppid.pid().as_u32() as i32
