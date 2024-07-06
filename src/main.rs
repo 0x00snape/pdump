@@ -8,7 +8,7 @@ fn main() {
     let args: Vec<_> = std::env::args().collect();
 
     if args.len() != 2 {
-        println!("Usage: ./scanme <PROCESS_NAME>");
+        println!("Usage: ./pdump <PROCESS_NAME>");
         std::process::exit(0);
     }
 
